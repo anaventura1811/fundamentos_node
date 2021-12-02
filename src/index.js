@@ -19,7 +19,8 @@ statement []
 app.post('/account', (req, res) => {
   const { cpf, name, statement } = req.body;
   
-
+  const id = uuidv4();
+  
   return res.json([
     'JavaScript',
   ])
